@@ -23,7 +23,7 @@ public class GameActivity extends AppCompatActivity {
         String computerchoice = extras.getString("computerchoice");
         String winner = extras.getString("winner");
 
-        String result = "Computer played: " + computerchoice + "\n Result is: " + winner;
+        String result = "Computer played: \n \n " + computerchoice + "\n \n \n \n Result: \n \n " + winner;
 
         gameResult.setText(result);
 
