@@ -43,7 +43,7 @@ public class Game {
     public String getWinner() {
 
         if (playerChoice == computerChoice) {
-            return "It's a draw! Try again. Or don't. I don't care.";
+            return "It's a draw!";
         } else if (playerChoice == "Rock" && computerChoice == "Scissors") {
             return "Rock wins!";
         } else if (playerChoice == "Rock" && computerChoice == "Paper") {

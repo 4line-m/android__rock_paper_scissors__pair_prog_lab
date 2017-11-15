@@ -49,6 +49,39 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onPaperButtonClick(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+
+        game = new Game("Paper");
+
+        game.setComputerChoice();
+
+        intent.putExtra("computerchoice", game.computerChoice());
+
+        String winner = game.getWinner();
+
+        intent.putExtra("winner", winner);
+
+
+        startActivity(intent);
+    }
+
+    public void onScissorsButtonClick(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+
+        game = new Game("Scissors");
+
+        game.setComputerChoice();
+
+        intent.putExtra("computerchoice", game.computerChoice());
+
+        String winner = game.getWinner();
+
+        intent.putExtra("winner", winner);
+
+
+        startActivity(intent);
+    }
 
 
 
